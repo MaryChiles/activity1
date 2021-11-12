@@ -4,10 +4,10 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <body>
 
-<body style="background-color:#D4CFF6;">
+<body style="background-color:#39F959;">
 </body>
 
-<center><h1 style="color:Brown; font-family:Copperplate;"> MY FIRST ACTIVITY </h1></center>
+<center><h1 style="color:Brown; font-family:Copperplate;"> Web. Dev. 1st Prog. Act. </h1></center>
 
 
 <div ng-app="">
@@ -15,31 +15,44 @@
 <p>Name: <input type="text" ng-model="name"></p>
 <p>You wrote: {{ name }}</p>
 
+<p>Contact: <input type="text" ng-model="name2"></p>
+<p>You wrote: {{ name2 }}</p>
+
 <p>Enter you Address: <input type="text" ng-model="add"></p>
 <p>You wrote: {{ add }}</p>
 
-<p>Enter your SHS High School: <input type="text" ng-model="shs"></p>
-<p>You wrote: {{ shs }}</p>
+<p>Enter your School: <input type="text" ng-model="shs"></p>
+<p>You wrote: {{ school }}</p>
 
 <p>Enter your Course: <input type="text" ng-model="course"></p>
 <p>You wrote: {{ course }}</p>
 
-<div ng-app="" ng-init="names=[
-{name:'Jasmine',city:'Manila' , description: 'Very Thoughtful.'},
-{name:'April',city:'Taguig' , description: 'A one call away friend.'},
-{name:'Coleen',city:'Quezon' , description: 'Prone to emotional breakdown.'},
-{name:'Kenneth',city:'Mandaluyong' , description: 'A friend you can count on.'},
-{name:'Kate',city:'San Juan' , description: 'Moody.'},
-{name:'Cyndy',city:'Cavite' , description: 'Master of advice.'},
-{name:'Edelyn',city:'Laguna' , description: 'Comfortable to be with.'},
-{name:'Nova',city:'Makati' , description: 'The Most Quiet of them all.'},
-{name:'Marvy',city:'Albay' , description: 'Strong Person.'},
-{name:'Marky',city:'Pasay' , description: 'The Guilt Tripper LOL JK.'}]">
 
-<h2><p style="font-family:courier;">MEET MY FRIENDS:</p></h2>
+<div ng-app="" ng-init="names=[
+{Title:'NARUTO', &nbsp; &nbsp; Genre:'Action' , Description: 'A boy who is a Jinjuriki since a baby that holds a Nine Tail Fox inside his body.'},
+
+{Title:'NARUTO SHIPPUDEN', Genre:'Action' ,  Description: 'The continuation story of Naruto to the Great Ninja War.'},
+
+{Title:'OURAN HIGH SCHOOL HOST CLUB',  Genre:'School life/Romance' , Description: ' A School Club established by the son of the school chairman and the members are also from big families meet a simple scholar commner girl.'},
+
+{Title:'SHAMAN KING',  Genre:'Action' , Description: 'The boy from the family of the shaman and met ancient swordmaster and became his soul weapon.'},
+
+{Title:'GHOST FIGHTER',  Genre:'Action' , Description: 'Eugene a boy who have an extra ordinary power became a fighter and meet his friend a long his journey in soul world.'},
+
+{Title:'SAILOR MOON',  Genre:'Action' , Description: 'The series follows the adventures of the titular protagonist whose civilian name is Usagi Tsukino, a middle school student who is given the power to become the Pretty Soldier. Joined by other Sailor Soldiers, she defends Earth against an assortment of evil villains.'},
+
+{Title:'VAMPIRE KNIGHT',  Genre:'Action/Romance' , Description: 'he cheerful Yuuki Cross and the gruff Zero Kiryuu are members of the disciplinary committee at Cross Academy, which houses two very distinct classes: the Day Class and the Night Class. Their job consists of upholding order between the classes when they switch out..'},
+
+{Title:'SAIYUKI',  Genre:'Action' , Description: 'Saiyuki is the story of four punk-like heroes: the monk Genjyo Sanzo, the monkey king Son Goku, the half-demon Sha Gojyo, and the man who turned into a demon Cho Hakkai (formerly known as Cho Gonou)..'},
+
+{Title:'BLEACH',  Genre:'Action' , Description: 'The story follows the adventures of Ichigo Kurosaki after he obtains the powers of a Soul Reaper—a death personification similar to the Grim Reaper—from another Soul Reaper, Rukia Kuchiki..'},
+
+{Title:'INUYASHA', Genre: 'Action/Romance', Description: 'A girl travel to the past and meet a half monster and half human Inuyasha and then fall inlove to each other.'}]">
+
+<h2><p style="font-family:courier;">My Favorite Anime:</p></h2>
 <ol>
   <li ng-repeat="x in names">
-  {{ 'Name: ' + x.name + ', ' + 'City: ' + x.city + ', ' + 'Description: ' + x.description }}</li>
+  {{ 'Title: ' + x.Title + ', ' + 'Genre: ' + x.Genre + ', ' + 'Description: ' + x.Description }}</li>
 </ol>
 
 </div>
